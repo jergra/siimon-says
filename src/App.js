@@ -56,7 +56,7 @@ function App() {
     // console.log('sequence.slice(0, round) in Attempt:', sequence.slice(0, round))
     // console.log('clicks in Attempt:', clicks)
     if (clicks >= round) {
-      setTimeout(Enter, 1000)
+      setTimeout(Enter, 500)
     }
 
     for (let i = 0; i < attempt.length; i++) {
@@ -67,17 +67,17 @@ function App() {
         let color = 1
         for (let i = 0; i < 8; i++) {
           //console.log('i, color:', i, color)
-          setTimeout(TurnOn, 1000 + 500 * i, color);
-          setTimeout(TurnOff, 1200 + 500 * i, color);
+          setTimeout(TurnOn, 500 + 300 * i, color);
+          setTimeout(TurnOff, 700 + 300 * i, color);
           color++
           if (color === 5) {
             color = 1
           }
         }
-        setTimeout(TurnOn, 5000, 1);
-        setTimeout(TurnOff, 5200, 1);
+        setTimeout(TurnOn, 2900, 1);
+        setTimeout(TurnOff, 3100, 1);
         
-        setTimeout(Reset, 5000)
+        setTimeout(Reset, 2900)
         setSequence([])
         //setRound(0)
         setAttempt([])
@@ -129,8 +129,8 @@ function App() {
     //console.log('round in Round:', round)
     for (let i = 1; i <= round + 1; i++) {
       //console.log('i, round + 1:', i, round + 1)
-      setTimeout(TurnOn, 1000 * i - 700, sequence[i - 1]);
-      setTimeout(TurnOff, 1000 * i - 200, sequence[i - 1]);
+      setTimeout(TurnOn, 500 * i - 200, sequence[i - 1]);
+      setTimeout(TurnOff, 500 * i, sequence[i - 1]);
     }
   }
   
