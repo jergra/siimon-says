@@ -80,62 +80,54 @@
 .container {
   width: 600px;
   height: 300px;
-  background: pink;
+  background: #616368;
   display: flex;
 }
 .greenQuadrant {
   width: 290px;
   height: 290px;
   background: rgb(44, 236, 44);
-  border-right: 10px solid #616368;
-  border-bottom: 10px solid #616368;
 }
 .redQuadrant {
   width: 290px;
   height: 290px;
   background: red;
-  border-bottom: 10px solid #616368;
-  border-left: 10px solid #616368;
+  margin-left: 20px;
 }
 .yellowQuadrant {
   width: 290px;
   height: 290px;
   background: yellow;
-  border-top: 10px solid #616368;
-  border-right: 10px solid #616368;
+  margin-top: 10px;
 }
 .blueQuadrant {
   width: 290px;
   height: 290px;
   background: blue;
-  border-top: 10px solid #616368;
-  border-left: 10px solid #616368;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 .greenQuadrantDark {
   width: 290px;
   height: 290px;
   background: darkgreen;
-  border-right: 10px solid #616368;
-  border-bottom: 10px solid #616368;
 }
 .redQuadrantDark {
   width: 290px;
   height: 290px;
   background: darkred;
-  border-bottom: 10px solid #616368;
-  border-left: 10px solid #616368;
+  margin-left: 20px;
 }
 .yellowQuadrantDark {
   width: 290px;
   height: 290px;
   background: rgb(105, 105, 0);
-  border-top: 10px solid #616368;
-  border-right: 10px solid #616368;
+  margin-top: 10px;
 }
 .blueQuadrantDark {
   width: 290px;
   height: 290px;
   background: darkblue;
-  border-top: 10px solid #616368;
-  border-left: 10px solid #616368;
+  margin-left: 20px;
+  margin-top: 10px;
 }
