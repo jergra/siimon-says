@@ -34,6 +34,14 @@ function App() {
     setRound(round + 1)
   }
 
+  function getHighScore() {
+    if (localStorage.getItem("rounds") === null) {
+      return '0'
+    } else {
+      return localStorage.getItem("rounds")
+    }
+  }
+
   function Attempt(quadrant) {
     setClicks(clicks + 1)
     //console.log('one click -------------------------')
@@ -189,7 +197,7 @@ function App() {
       {brightenBlue && turnOnB()}
       {brightenYellow && turnOnEb()}
 
-      <div className="highScore">High Score: {localStorage.getItem("rounds")}</div>
+      <div className="highScore">High Score: {getHighScore()}</div>
       <div className="press" onClick={Start}>{round === 0 ? <div className="launch" onClick={launch}>Press</div> : round}</div>
       <div className="circleContainer">
       <div className="circle">
