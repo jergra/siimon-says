@@ -129,8 +129,8 @@ function App() {
     //console.log('round in Round:', round)
     for (let i = 1; i <= round + 1; i++) {
       //console.log('i, round + 1:', i, round + 1)
-      setTimeout(TurnOn, 1000 * i - 900, sequence[i - 1]);
-      setTimeout(TurnOff, 1000 * i - 400, sequence[i - 1]);
+      setTimeout(TurnOn, 1000 * i - 800, sequence[i - 1]);
+      setTimeout(TurnOff, 1000 * i - 500, sequence[i - 1]);
     }
   }
   
